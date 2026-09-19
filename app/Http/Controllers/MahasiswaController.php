@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class MahasiswaController extends Controller
@@ -11,13 +12,12 @@ class MahasiswaController extends Controller
     {
         $mahasiswa = [
             'nim' => '251011700437',
-            'nama' => 'Rika Amelia',
-            'prodi' => 'Sistem Informasi',
-            'kampus' => 'Universitas Pamulang',
+            'nama'=> 'Rika Amelia Fitriani',
+            'jurusan' => 'Sistem Informasi',
+            'kampus'=> 'Universitas Pamulang',
             'email' => 'rikaameliaxx@gmail.com',
-            'status' => 'Aktif',
+            'status'=> 'Aktif',
         ];
-
-        return view('mahasiswa', compact('mahasiswa'));
+        return view('mahasiswa',compact ('mahasiswa'));
     }
 }
